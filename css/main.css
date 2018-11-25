@@ -10,7 +10,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font: normal 100%/1.3 sans-serif;
+  font: normal 100%/1.3;
 }
 
 *, *::before, *::after {
@@ -68,5 +68,12 @@ a:hover {
   ul li {
     width: 50%;
     text-align: center;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+
+  ul li {
+    width: 25%;
   }
 }
