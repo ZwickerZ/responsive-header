@@ -45,11 +45,18 @@ nav ul {
 nav li {
   font-size: 1.125rem;
   list-style-type: none;
-  padding: .5em .75em;
+  /* padding: .5em .75em; */
 }
 
 li a {
+  display: block;
   text-decoration: none;
   color: #6c8fe0;
+  padding: .5em .75em;
 
+}
+
+a:hover {
+  background-color: #6c8fe0;
+  color: #fff;
 }
