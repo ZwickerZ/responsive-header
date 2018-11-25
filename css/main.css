@@ -26,11 +26,11 @@ header {
   font-family: Ubuntu, sans-serif;
   margin: 0;
   padding-bottom: 5px;
+  color: #fff;
 }
 
 header h1 {
   font-size: 2rem;
-  color: #fff;
   text-align: center;
   margin: 0;
   padding: .3em 0 .5em;
@@ -39,21 +39,22 @@ header h1 {
 nav ul {
   padding: 0;
   margin: 0;
+  font-size: 1.125rem;
 }
 
 nav li {
-  font-size: 1.125rem;
   list-style-type: none;
 }
 
-li a {
+nav a {
   display: block;
   text-decoration: none;
   color: #6c8fe0;
   padding: .5em .75em;
+  white-space: nowrap;
 }
 
-a:hover {
+nav a:hover {
   background-color: #6c8fe0;
   color: #fff;
 }
@@ -69,11 +70,56 @@ a:hover {
     width: 50%;
     text-align: center;
   }
+
 }
 
 @media only screen and (min-width: 38em) {
 
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
   ul li {
     width: 25%;
   }
+
+  li a {
+    padding: .3em 0 .5em;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+   font-size: 120%;
+   line-height: 1.5;
+ }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        padding: .3em 0 .5em;
+  }
+
+  nav {
+    display: inline-block;
+    width: 66.66%;
+  }
+
+  header h1 {
+    padding: 0;
+    margin-left: .9rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
 }
